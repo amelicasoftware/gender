@@ -52,4 +52,9 @@ export class ArticleService {
     console.log('Servicio Articulos:', `${this.url}articulos/epidemics/ciencia/1/10/relevancia/0/{"anios":"","idiomas":"", "paises":"","areas":"","disciplinas":"","autores":"","instituciones":"","origen":"","funete":"","fb":1}'`);
     return this.http.get<ArticleResult>(`${this.url}articulos/epidemics/ciencia/1/10/relevancia/0/{"anios":"","idiomas":"", "paises":"","areas":"","disciplinas":"","autores":"","instituciones":"","origen":"","funete":"","fb":1}'`);
   }
+
+  getArticlesByCountry(): Observable<ArticleResult> {
+    console.log('Servicio Articulos:', `${this.url}articulos/epidemics/pais/2/1/10/relevancia/0/{"anios":"","idiomas":"", "paises":"","areas":"","disciplinas":"","autores":"","instituciones":"","origen":"","funete":"","fb":1}'`);
+    return this.http.get<ArticleResult>(`${this.url}articulos/epidemics/pais/2/1/10/relevancia/0/{"anios":"","idiomas":"", "paises":"","areas":"","disciplinas":"","autores":"","instituciones":"","origen":"","funete":"","fb":1}'`);
+  }
 }

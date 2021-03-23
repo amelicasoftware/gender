@@ -1,0 +1,62 @@
+#banner {
+    align-self: center;
+    align-items: center;
+    font-family: Barlow-Regular;
+}
+
+#banner img {
+    margin: 25px 40px 25px 80px;
+}
+
+.flex {
+    display: flex;
+}
+
+.searcher-title {
+    align-items: center;
+    width: 25%;
+}
+
+.searcher {
+    width: 70%;
+    padding-left: 40px;
+    font-size: 16px;
+}
+
+#list-countries {
+    width: 30%;
+    margin: auto auto auto 5px;
+    height: 30px;
+    background: #003B60;
+    color: white;
+    border-radius: 5px;
+}
+
+#sections {
+    display: grid;
+    grid-template-areas: "filters content-general";
+    grid-template-columns: 25% 75%;
+    min-height: 100vh;
+}
+
+#sections img {
+    margin: 10px;
+}
+
+.filters {
+    grid-area: filters;
+    border-right: 1px solid #f1f1f1;
+}
+
+.text-filters {
+    background-color: #003B60;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    padding-left: 71px;
+}
+
+.content-general {
+    grid-area: content-general;
+}

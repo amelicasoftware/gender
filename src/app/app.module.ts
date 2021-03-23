@@ -10,6 +10,7 @@ import { ROUTES } from './routes/app.routes';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FiltersComponent } from './components/filters/filters.component';
+import { BusquedaPaisComponent } from './pages/busqueda-pais/busqueda-pais.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FiltersComponent } from './components/filters/filters.component';
     TargetComponent,
     HeaderComponent,
     FooterComponent,
-    FiltersComponent
+    FiltersComponent,
+    BusquedaPaisComponent
   ],
   imports: [
     BrowserModule,
