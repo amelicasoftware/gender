@@ -1,1 +1,40 @@
-<p>busqueda-general works!</p>
+<section id="general">
+    <section id="header">
+        <app-header></app-header>
+    </section>
+
+    <section id="searches">
+        <h1>searches</h1>
+    </section>
+
+    <section id="banner" class="flex">
+        <div class="flex searcher-title">
+            <img src="assets/img/icons/buscador-institucionmdpi.png" />
+            <p>Búsqueda General</p>
+        </div>
+
+        <div class="searcher">
+            <input class="searcher-text" #predefined (keyup.enter)="searchArticles(predefined.value)" type="text" placeholder="Ingrese palabra de búsqueda" required />
+            <input class="searcher-icon" type="image" src="assets/img/icons/buscador-institucionmdpi.png" (click)="searchArticles(predefined.value)" name="boton-buscar-articulo" alt="Buscar" required />
+        </div>
+    </section>
+
+    <section id="sections">
+        <div class="filters">
+            <div class="text-filters">
+                <img src="assets/img/icons/filtro.png" />
+                <span>Filtros de Búsqueda</span>
+            </div>
+            <app-filters></app-filters>
+
+        </div>
+
+        <div class="content-general">
+            <app-target [articles]='articles'></app-target>
+        </div>
+    </section>
+
+    <section id="footer">
+        <app-footer></app-footer>
+    </section>
+</section>
