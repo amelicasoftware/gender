@@ -54,7 +54,12 @@ export class ArticleService {
   }
 
   getArticlesByCountry(): Observable<ArticleResult> {
-    console.log('Servicio Articulos:', `${this.url}articulos/epidemics/pais/2/1/10/relevancia/0/{"anios":"","idiomas":"", "paises":"","areas":"","disciplinas":"","autores":"","instituciones":"","origen":"","funete":"","fb":1}'`);
+    console.log('Servicio Articulos Por País:', `${this.url}articulos/epidemics/pais/2/1/10/relevancia/0/{"anios":"","idiomas":"", "paises":"","areas":"","disciplinas":"","autores":"","instituciones":"","origen":"","funete":"","fb":1}'`);
     return this.http.get<ArticleResult>(`${this.url}articulos/epidemics/pais/2/1/10/relevancia/0/{"anios":"","idiomas":"", "paises":"","areas":"","disciplinas":"","autores":"","instituciones":"","origen":"","funete":"","fb":1}'`);
+  }
+
+  getArticlesByKey(): Observable<ArticleResult> {
+    console.log('Servicio Articulos Por Palabra Clave:', `${this.url}articulos/epidemics/palabras/ciencia/1/10/relevancia/0/{"anios":"","idiomas":"", "paises":"","areas":"","disciplinas":"","autores":"","instituciones":"","origen":"","funete":"","fb":1}'`);
+    return this.http.get<ArticleResult>(`${this.url}articulos/epidemics/palabras/ciencia/1/10/relevancia/0/{"anios":"","idiomas":"", "paises":"","areas":"","disciplinas":"","autores":"","instituciones":"","origen":"","funete":"","fb":1}'`);
   }
 }

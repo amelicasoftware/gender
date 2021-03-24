@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FiltersComponent } from './components/filters/filters.component';
 import { BusquedaPaisComponent } from './pages/busqueda-pais/busqueda-pais.component';
+import { BusquedaPalabrasClaveComponent } from './pages/busqueda-palabras-clave/busqueda-palabras-clave.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BusquedaPaisComponent } from './pages/busqueda-pais/busqueda-pais.compo
     HeaderComponent,
     FooterComponent,
     FiltersComponent,
-    BusquedaPaisComponent
+    BusquedaPaisComponent,
+    BusquedaPalabrasClaveComponent
   ],
   imports: [
     BrowserModule,
