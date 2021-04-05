@@ -1,10 +1,10 @@
 <section id="general">
     <section id="header">
-        <app-header></app-header>
+        <app-header [currentSection]="'> Búsqueda Palabras Clave'"></app-header>
     </section>
 
-    <section id="searches">
-        <h1>searches</h1>
+    <section>
+        <app-banner-searches [sectionKey]=true></app-banner-searches>
     </section>
 
     <section id="banner" class="flex">

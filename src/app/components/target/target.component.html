@@ -3,18 +3,17 @@
     <div class="article" *ngFor="let article of articles">
         <div *ngIf="article.origen === 'PDF'">
             <a class="title" href="https://www.redalyc.org/articulo.oa?id={{article.cveArticulo}}" target="_blank">
-                {{ article.tituloArticulo <!-- | titleArticle --> }}
+                {{ article.tituloArticulo | titleArticle }}
             </a>
         </div>
 
         <div *ngIf="article.origen === 'XML'">
             <a class="title" href="https://www.redalyc.org/jatsRepo/{{article.cveRevista}}/{{article.cveArticulo}}/index.html" target="_blank">
-                {{ article.tituloArticulo <!-- | titleArticle --> }}
+                {{ article.tituloArticulo | titleArticle }}
             </a>
         </div>
 
-        <p>{{ article.autores
-            <!-- | authors -->}}</p>
+        <p>{{ article.autores | authors}}</p>
 
         <p>
             <!-- <a class="titleJournal" href="https://redalyc.org/revista.oa?id={{article.cveRevista}}" target="_blank">{{ article.nombreRevista }}, </a> <a class="titleJournal" href="https://redalyc.org/toc.oa?id={{article.cveRevista}}&numero={{article.cveNumero}}"
