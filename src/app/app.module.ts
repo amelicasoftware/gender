@@ -20,6 +20,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ROUTES } from './routes/app.routes';
 import { TargetComponent } from './components/target/target.component';
+import { TableComponent } from './components/table/table.component';
+import { BalloonsComponent } from './components/balloons/balloons.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { TargetComponent } from './components/target/target.component';
     FooterComponent,
     HeaderComponent,
     TargetComponent,
-    TitleArticlePipe
+    TitleArticlePipe,
+    TableComponent,
+    BalloonsComponent
   ],
   imports: [
     BrowserModule,
