@@ -10,7 +10,9 @@ import { MenuModule } from '@syncfusion/ej2-angular-navigations';
 import { AuthorsPipe } from './pipes/authors.pipe';
 import { TitleArticlePipe } from './pipes/title-article.pipe';
 
+// componentes
 import { AppComponent } from './app.component';
+import { BalloonsComponent } from './components/balloons/balloons.component';
 import { BannerSearchesComponent } from './components/banner-searches/banner-searches.component';
 import { BusquedaGeneralComponent } from './pages/busqueda-general/busqueda-general.component';
 import { BusquedaPaisComponent } from './pages/busqueda-pais/busqueda-pais.component';
@@ -18,16 +20,16 @@ import { BusquedaPalabrasClaveComponent } from './pages/busqueda-palabras-clave/
 import { FiltersComponent } from './components/filters/filters.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 import { ROUTES } from './routes/app.routes';
 import { TargetComponent } from './components/target/target.component';
 import { TableComponent } from './components/table/table.component';
-import { BalloonsComponent } from './components/balloons/balloons.component';
-import { PaginationComponent } from './components/pagination/pagination.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthorsPipe,
+    BalloonsComponent,
     BannerSearchesComponent,
     BusquedaGeneralComponent,
     BusquedaPaisComponent,
@@ -35,11 +37,10 @@ import { PaginationComponent } from './components/pagination/pagination.componen
     FiltersComponent,
     FooterComponent,
     HeaderComponent,
+    PaginationComponent,
     TargetComponent,
     TitleArticlePipe,
     TableComponent,
-    BalloonsComponent,
-    PaginationComponent
   ],
   imports: [
     BrowserModule,
