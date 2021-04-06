@@ -33,7 +33,58 @@
         </div>
 
         <div class="content-general">
-            <app-target [articles]='articles'></app-target>
+            <div class="container-sections">
+                <div class="selected sections-aling article-icon">
+                    <img src="assets/img/icons/articulos.png" />
+                    <span>Artículos de revista</span>
+                </div>
+                <div class="filters-icon">
+                    <!--  <a><img src="assets/img/icons/filtro.png" /></a> -->
+                    <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+                    <label for="abrir-cerrar">
+                        <img src="assets/img/icons/filtro.png" />
+                    </label>
+                    <div id="sidebar" class="sidebar">
+                        <ul class="menu">
+                            <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+                            <label for="abrir-cerrar">
+                                <img class="close-filters" src="assets/img/icons/filtro.png" />
+                            </label>
+                            <app-filters></app-filters>
+                        </ul>
+                    </div>
+                </div>
+                <div class="view-results">
+                    <span>Modo de visualizar resultados</span>
+                </div>
+                <div class="sections-aling" (click)="changeView(false)" [ngClass]="{'activate': !view, 'selected': !view, 'select': view}">
+                    <img [src]="imgTable" />
+                    <span class="view-table">Tabla</span>
+                </div>
+                <div class="sections-aling" (click)="changeView(true)" [ngClass]="{'activate': view, 'selected': view, 'select': !view}">
+                    <img [src]="imgList" />
+                    <span>Lista</span>
+                </div>
+            </div>
+            <div>
+                <div class="results">
+                    <span>Resultados para: <b>{{ country }}</b> en artículos de revista</span>
+                    <span class="total-results" *ngIf="positionPage !== finalPositionPage">{{positionPage * 10 - 9}} a {{positionPage * 10}} de {{totalResults}} artículos </span>
+                    <span class="total-results" *ngIf="positionPage === finalPositionPage"> {{positionPage * 10 - 9}} a {{totalResults}} de {{totalResults}} artículos </span>
+                </div>
+                <div class="balloons-component">
+                    <app-balloons></app-balloons>
+                </div>
+
+                <div class="views-components">
+                    <app-target [articles]="articles" *ngIf="view"></app-target>
+                    <app-table [articles]="articles" *ngIf="!view"></app-table>
+                </div>
+
+                <div class="pagination-component">
+                    <app-pagination (click)="goUp()"></app-pagination>
+                </div>
+            </div>
         </div>
     </section>
 

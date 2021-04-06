@@ -81,12 +81,12 @@
 }
 
 .selected {
-    color: #004E80;
+    color: #8e5ab7;
     cursor: default;
 }
 
 .activate {
-    color: #004E80;
+    color: #8e5ab7;
 }
 
 .select {
@@ -106,6 +106,7 @@
 .results {
     margin: 15px 20px;
     font-size: 13px;
+    color: #1a1a1a;
 }
 
 .total-results {

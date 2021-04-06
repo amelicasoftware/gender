@@ -12,6 +12,16 @@ import { ArticleResult } from '../../models/ArticleResult.model';
 export class BusquedaPalabrasClaveComponent implements OnInit {
   articles: Array<Article> = new Array<Article>();
 
+  key: string;
+  keyCopy: string;
+  finalPositionPage: number;
+  totalResults: number;
+  positionPage = 1;
+  view = true;
+  results = true;
+  imgTable = 'assets/img/icons/tabla-desactivada.png';
+  imgList = 'assets/img/icons/lista-activada.png';
+
   constructor(
     private articleService: ArticleService,
     private filterService: FilterService
@@ -27,6 +37,25 @@ export class BusquedaPalabrasClaveComponent implements OnInit {
   }
 
   searchArticlesByKey(key: string): void {
+  }
+
+  changeView(state: boolean): void {
+    this.view = state;
+    if (state) {
+      this.imgTable = 'assets/img/icons/tabla-desactivada.png';
+      this.imgList = 'assets/img/icons/lista-activada.png';
+    } else {
+      this.imgTable = 'assets/img/icons/tabla-activada.png';
+      this.imgList = 'assets/img/icons/lista-desactivada.png';
+    }
+  }
+
+  goUp(): void {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
   }
 
 }

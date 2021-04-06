@@ -6,6 +6,6 @@ import { BusquedaPalabrasClaveComponent } from '../pages/busqueda-palabras-clave
 export const ROUTES: Routes = [
     { path: 'busqueda-general', component: BusquedaGeneralComponent },
     { path: 'busqueda-pais', component: BusquedaPaisComponent },
-    { path: 'busqueda-palabras-clave', component: BusquedaPalabrasClaveComponent },
+    { path: 'busqueda-palabra-clave', component: BusquedaPalabrasClaveComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
