@@ -22,6 +22,7 @@ import { ROUTES } from './routes/app.routes';
 import { TargetComponent } from './components/target/target.component';
 import { TableComponent } from './components/table/table.component';
 import { BalloonsComponent } from './components/balloons/balloons.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { BalloonsComponent } from './components/balloons/balloons.component';
     TargetComponent,
     TitleArticlePipe,
     TableComponent,
-    BalloonsComponent
+    BalloonsComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
