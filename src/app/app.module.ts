@@ -30,6 +30,11 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { ROUTES } from './routes/app.routes';
 import { TargetComponent } from './components/target/target.component';
 import { TableComponent } from './components/table/table.component';
+import { HomeComponent } from './pages/home/home.component';
+import { MapComponent } from './components/map/map.component';
+import { NetworkComponent } from './components/network/network.component';
+import { WordCloudComponent } from './components/word-cloud/word-cloud.component';
+import { LastArticlesComponent } from './components/last-articles/last-articles.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +52,11 @@ import { TableComponent } from './components/table/table.component';
     TargetComponent,
     TitleArticlePipe,
     TableComponent,
+    HomeComponent,
+    MapComponent,
+    NetworkComponent,
+    WordCloudComponent,
+    LastArticlesComponent,
   ],
   imports: [
     BrowserAnimationsModule,

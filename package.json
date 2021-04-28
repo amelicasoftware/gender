@@ -11,6 +11,8 @@
   },
   "private": true,
   "dependencies": {
+    "@amcharts/amcharts4": "^4.10.18",
+    "@amcharts/amcharts4-geodata": "^4.1.20",
     "@angular/animations": "~9.1.7",
     "@angular/common": "~9.1.7",
     "@angular/compiler": "~9.1.7",
@@ -20,8 +22,11 @@
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7",
     "@syncfusion/ej2-angular-navigations": "^19.1.54",
+    "@types/jquery": "^3.5.5",
+    "jquery": "^3.6.0",
     "ngx-spinner": "^11.0.1",
     "rxjs": "~6.5.4",
+    "scriptjs": "^2.5.9",
     "sweetalert2": "^10.15.7",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
