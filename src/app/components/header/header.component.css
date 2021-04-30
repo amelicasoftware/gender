@@ -77,6 +77,14 @@ a {
     display: none;
 }
 
+.lang {
+    cursor: pointer;
+}
+
+.socials-networks {
+    float: right;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 
