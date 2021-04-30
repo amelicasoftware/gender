@@ -87,4 +87,7 @@ export class ArticleService {
     articlesLength ? articlesExists = true : articlesExists = false;
     return articlesExists;
   }
+  getLastArticles(): any {
+    return this.http.get(`https://www.redalyc.org/service/r2020/requestJsonEpidemics`, {responseType: 'text'});
+  }
 }
