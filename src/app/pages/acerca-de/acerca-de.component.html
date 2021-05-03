@@ -1,0 +1,26 @@
+<section id="general">
+
+    <section id="header">
+        <app-header [currentSection]="'> Acerca de'"></app-header>
+    </section>
+
+    <section id="searches">
+        <app-banner-searches [sectionAbout]=true></app-banner-searches>
+    </section>
+
+    <section id="content-about">
+        <div>
+            <p>
+                {{ 'estatica.parrafo1' | translate }}
+            </p>
+            <p>
+                {{ 'estatica.parrafo2' | translate }}
+            </p>
+        </div>
+
+    </section>
+
+    <section id="footer">
+        <app-footer></app-footer>
+    </section>
+</section>

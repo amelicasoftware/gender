@@ -39,6 +39,7 @@ import { MapComponent } from './components/map/map.component';
 import { NetworkComponent } from './components/network/network.component';
 import { WordCloudComponent } from './components/word-cloud/word-cloud.component';
 import { LastArticlesComponent } from './components/last-articles/last-articles.component';
+import { AcercaDeComponent } from './pages/acerca-de/acerca-de.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -65,6 +66,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NetworkComponent,
     WordCloudComponent,
     LastArticlesComponent,
+    AcercaDeComponent,
   ],
   imports: [
     BrowserAnimationsModule,
