@@ -43,9 +43,9 @@
         </div>
     </div>
     <div id="menu-section">
-        <div (click)="toSearcher()" [ngClass]="{'selection': selection == 1}" class="op-menu-section btn-search" id="btn-search">
+        <!--<div (click)="toSearcher()" [ngClass]="{'selection': selection == 1}" class="op-menu-section btn-search" id="btn-search">
             <img src="assets/img/home/busqueda.png"><span>{{ 'navegacion.buscador' | translate }}</span>
-        </div>
+        </div> -->
         <div (click)="toCould()" [ngClass]="{'selection': selection == 2}" class="op-menu-section btn-tema" id="btn-articles">
             <img src="assets/img/home/palabra_clave.png"><span>{{ 'navegacion.clave' | translate}}</span>
         </div>
@@ -57,6 +57,9 @@
         </div>
         <div (click)="toSparql()" [ngClass]="{'selection': selection == 5}" class="op-menu-section btn-sparql" id="btn-sparql">
             <img src="assets/img/home/sparql.png"><span>{{ 'navegacion.sparql' | translate}}</span>
+        </div>
+        <div class="op-menu-section" id="btn-recientes">
+            <img src="assets/img/home/recientes.png">&nbsp;<span>{{ 'navegacion.recientes' | translate}}</span>
         </div>
         <div (click)="toAbout()" class="op-menu-section btn-recientes" id="btn-recientes">
             <img src="assets/img/home/acerca.png"><span>{{ 'header.acerca.genero' | translate }}</span>
@@ -95,11 +98,12 @@
     </div>
 </section>
 <section id="last-numbers">
+    <div style="width: 90%; font-size: 16pt; font-family: 'Barlow-Regular'; margin: 30px auto; color: #1A1A1A;">{{'home.recientes' | translate}}</div>
     <div id="container-title">
-        <div class="title-section">Artículos recientes sobre epidemias y COVID-19</div>
+        <div class="title-section"><img src="assets/img/home/articulosRecientes.png" alt=""> &nbsp;&nbsp;  {{ 'busqueda.secciones.principal' | translate}}</div>
         <div id="buttons-carrusell">
-            <div (click)="leftScroll()" class="button-carrusell"><img src="assets/img/home/anterior.png" alt=""></div>
-            <div (click)="rightScroll()"class="button-carrusell"><img src="assets/img/home/siguiente.png" alt=""></div>
+            <div (click)="leftScroll()" class="button-carrusell"><img src="assets/img/home/anterior_g.png" alt=""></div>
+            <div (click)="rightScroll()"class="button-carrusell"><img src="assets/img/home/siguiente_g.png" alt=""></div>
         </div>
     </div>
     <div id="container-last-articles">
@@ -111,11 +115,11 @@
         <div id="descripcion-sparql">
             <p id="titulo-sparql">{{'navegacion.sparql' | translate}}</p>
             <br>
-            <p [innerHTML]="'home.sparql' | translate: { value: ('http://sparql.amelica.org/knowledgebase/epidemics/datastore')}"></p>
+            <p [innerHTML]="'home.sparql' | translate: { value: ('http://sparql.amelica.org/knowledgebase/genero/datastore')}"></p>
         </div>
         <div id="container-data">
             <div id="container-id">
-                <iframe src="http://sparql.amelica.org/knowledgebase/epidemics/datastore" frameborder="0" width="100%" height="100%"></iframe>
+                <iframe src="http://sparql.amelica.org/knowledgebase/genero/datastore" frameborder="0" width="100%" height="100%"></iframe>
             </div>
         </div>
     </div>

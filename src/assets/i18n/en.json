@@ -36,12 +36,13 @@
         "clave": "Articles by keyword",
         "conocimiento": "Knowledge representation",
         "pais": "Articles by country",
+        "recientes": "More recent",
         "sparql": "Knowledge base in  SPARQL"
     },
     "home": {
         "buscar": "Search",
         "mensaje": "For a non-for-profit publishing model to keep the academic and open nature of the scientific communication.",
-        "recientes": "Recent articles about epidemics and COVID-19",
+        "recientes": "Recent publications",
         "mas": "Display more articles",
         "cargando": "Loading Articles...",
         "sparql": "SPARQL access point with the available data to access the results for better analysis: <a style='color: #4762b2;' href='http://sparql.amelica.org/knowledgebase/epidemics/datastore'>{{ value }}</a>"

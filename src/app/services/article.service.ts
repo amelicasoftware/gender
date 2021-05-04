@@ -88,6 +88,6 @@ export class ArticleService {
     return articlesExists;
   }
   getLastArticles(): any {
-    return this.http.get(`https://www.redalyc.org/service/r2020/requestJsonEpidemics`, {responseType: 'text'});
+    return this.http.get(`http://portal.amelica.org/ApiReaderIndex/resources/articulos/genero/recientes/20/fechaAltaArticuloM/1`);
   }
 }

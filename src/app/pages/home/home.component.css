@@ -88,16 +88,18 @@
 }
 #container-title{
     display: flex;
-    width: 60%;
+    width: 70%;
     margin: 20px auto;
-    border-bottom: #447a9c solid 2px;
+    border-bottom:#6ad485 solid 2px;
     align-items: center;
 }
 .title-section{
     width: 80%;
-    color: #004f7d;
+    color: #6ad485;
     font-size: 16pt;
     font-family: 'Barlow-Regular';
+    display: flex;
+    align-items: center;
 }
 #buttons-carrusell{
     width: 20%;
@@ -269,7 +271,7 @@
     position: fixed;
     width: 30px;
     height: 30px;
-    background: #014f80;
+    background: #8E5AB7;
     display: flex;
     justify-content: center;
     align-items: center;
