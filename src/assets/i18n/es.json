@@ -36,12 +36,13 @@
         "clave": "Artículos por palabra clave",
         "conocimiento": "Representación del conocimiento",
         "pais": "Artículos por país",
-        "sparql": "Base de conocimiento en SPARQL"
+        "sparql": "Base de conocimiento en SPARQL",
+        "recientes": "Más recientes"
     },
     "home": {
         "buscar": "Buscar",
         "mensaje": "Por un modelo de publicación sin fines de lucro para conservar la naturaleza académica y abierta de la comunicación cientifíca.",
-        "recientes": "Artículos recientes sobre epidemias y COVID-19",
+        "recientes": "Publicaciones recientes",
         "mas": "Ver más artículos",
         "cargando": "Cargando Artículos...",
         "sparql": "Punto de acceso SPARQL con los datos disponibles para acceder a los resultados para mayores análisis: <a style='color: #4762b2;' href='http://sparql.amelica.org/knowledgebase/epidemics/datastore'>{{ value }}</a>"
