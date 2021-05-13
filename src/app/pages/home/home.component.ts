@@ -75,6 +75,9 @@ export class HomeComponent implements OnInit {
   toAbout(){
     this.router.navigate(['/acerca-de']);
   }
+  toRecent(){
+    document.getElementById('last-numbers').scrollIntoView({ behavior: 'smooth' });
+  }
   toScrollTop(){
     const element = document.getElementsByClassName('header');
     element[0].scrollIntoView({ behavior: 'smooth'});
@@ -99,19 +102,22 @@ export class HomeComponent implements OnInit {
       }
     }
 
-    if ($(window).scrollTop() > 0 && $(window).scrollTop() < 600) {
+    if ($(window).scrollTop() > 0 && $(window).scrollTop() < 500) {
       this.selection = 1;
     }
-    if ($(window).scrollTop() > 600 && $(window).scrollTop() < 1600) {
+    if ($(window).scrollTop() > 500 && $(window).scrollTop() < 1200) {
       this.selection = 2;
     }
-    if ($(window).scrollTop() > 1601 && $(window).scrollTop() < 2500) {
+    if ($(window).scrollTop() > 1201 && $(window).scrollTop() < 2300) {
       this.selection = 3;
     }
-    if ($(window).scrollTop() > 2501 && $(window).scrollTop() < 3600) {
+    if ($(window).scrollTop() > 2301 && $(window).scrollTop() < 3300) {
       this.selection = 4;
     }
-    if ($(window).scrollTop() > 3501 && $(window).scrollTop() < 4000) {
+    if ($(window).scrollTop() > 3201 && $(window).scrollTop() < 3600) {
+      this.selection = 6;
+    }
+    if ($(window).scrollTop() > 3601 && $(window).scrollTop() < 4000) {
       this.selection = 5;
     }
   }

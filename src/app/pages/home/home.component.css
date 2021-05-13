@@ -90,12 +90,12 @@
     display: flex;
     width: 70%;
     margin: 20px auto;
-    border-bottom:#6ad485 solid 2px;
+    border-bottom:#573f6a solid 2px;
     align-items: center;
 }
 .title-section{
     width: 80%;
-    color: #6ad485;
+    color: #573f6a;
     font-size: 16pt;
     font-family: 'Barlow-Regular';
     display: flex;

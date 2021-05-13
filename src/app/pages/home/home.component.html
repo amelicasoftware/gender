@@ -58,7 +58,7 @@
         <div (click)="toSparql()" [ngClass]="{'selection': selection == 5}" class="op-menu-section btn-sparql" id="btn-sparql">
             <img src="assets/img/home/sparql.png"><span>{{ 'navegacion.sparql' | translate}}</span>
         </div>
-        <div class="op-menu-section" id="btn-recientes">
+        <div (click)="toRecent()" class="op-menu-section" id="btn-recientes" [ngClass]="{'selection': selection == 6}">
             <img src="assets/img/home/recientes.png">&nbsp;<span>{{ 'navegacion.recientes' | translate}}</span>
         </div>
         <div (click)="toAbout()" class="op-menu-section btn-recientes" id="btn-recientes">
