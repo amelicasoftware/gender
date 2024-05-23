@@ -82,8 +82,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     }),
     RouterModule.forRoot(ROUTES, { useHash: true}),
-  ],
-  providers: [
+  ],providers: [
     { provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi: true},
     { provide: HTTP_INTERCEPTORS, useClass: HttpErrorInterceptor, multi: true}
   ],
