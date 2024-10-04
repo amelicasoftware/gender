@@ -35,11 +35,32 @@
             </div>
         </div>
         <div id="contenedor-numeralias">
-            <div class="text-description" [innerHTML]="'navegacion.total' | translate: { articles: (numArticulos), journals: (numRevistas), countries: (numPaises)}">
+            <!-- <div class="text-description" [innerHTML]="'navegacion.total' | translate: { articles: (numArticulos), journals: (numRevistas), countries: (numPaises)}">
+            </div> -->
+            <div id="new-number">
+                <p class="parrafo-number">
+                    <span class="numbers">
+                        {{ numArticulos }}
+                    </span>
+                    {{ 'navegacion.texto-num-articulo' | translate }}
+                    {{ 'navegacion.texto-num-articulo2' | translate }}
+                    <span class="numbers">
+                        {{ numRevistas }}
+                    </span>
+                    {{ 'navegacion.texto-num-rev' | translate }}
+                    {{ 'navegacion.texto-num-rev2' | translate }}
+                    <span class="numbers">
+                        {{ numPaises }}
+                    </span>
+                    {{ 'navegacion.texto-num-paises' | translate }}
+                </p>
             </div>
         </div>
-        <div id="contenedor-resumen" class="text-description">
+        <!--<div id="contenedor-resumen" class="text-description">
             {{'home.mensaje' | translate}}
+        </div>-->
+        <div id="contenedor-resumen" class="text-description">
+            {{'home.mensaje1' | translate}}
         </div>
     </div>
     <div id="menu-section">

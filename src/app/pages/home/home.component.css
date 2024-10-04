@@ -65,6 +65,10 @@
 .number {
     font-weight: bold;
 }
+.numbers{
+    font-family: 'Barlow-Bold';
+    font-size: 13pt;
+}
 #menu-section{
     background-color: #8E5AB7;
     color: white;
