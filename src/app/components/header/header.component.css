@@ -5,10 +5,66 @@
 .navigation {
     width: 100%;
     display: flex;
-    color: white;
+    color: black;
     align-items: center;
     height: 90px;
     justify-content: center;
+    background-color: #c8d0d5 !important;
+}
+
+#hide-on-scroll.hidden {
+    display: none;
+}
+
+#hide-scroll {
+    display: block;
+}
+
+.img-scroll {
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+}
+
+.top-bar {
+    display: flex;
+    width: 100%;
+    height: 110px;
+}
+
+.logo-part {
+    background-color: #ffffff;
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo-part img {
+    width: 100%;
+    max-width: 160px;
+    margin-right: 10px;
+}
+
+.text-part {
+    background-color: #ff3333;
+    color: white;
+    width: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
+    font-size: calc(8px + 0.4vw);
+    line-height: 1.5;
+}
+
+.text-part .title {
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 4px;
 }
 
 .to-home {
@@ -19,8 +75,8 @@
 
 .links-home ul {
     font-size: 12px;
-    background-color: #37464E;
-    color: white;
+    background-color: #c8d0d5;
+    color: black;
     white-space: normal;
     display: flex;
     justify-content: space-around;
@@ -28,8 +84,8 @@
 }
 
 .links-home li:hover {
-    background-color: #37464E;
-    color: white;
+    background-color: #c8d0d5;
+    color: black;
 }
 
 .languages-social-netwoks {
@@ -92,12 +148,14 @@ a {
     .links-home {
         display: none;
     }
+
     .current-section {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 15px 0px;
     }
+
     #menu-mobile {
         display: block;
         margin: 0px 10px;
@@ -113,22 +171,26 @@ a {
     .links-home {
         display: none;
     }
+
     .current-section {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 15px 0px;
     }
+
     .navigation {
         height: 65px;
         justify-content: space-between;
     }
+
     #menu-mobile {
         display: block;
         margin: 0px 10px;
         cursor: pointer;
         font-size: 15pt;
     }
+
     .navigation div {
         margin: 0px 30px;
     }
