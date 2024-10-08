@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, HostListener } from '@angular/core';
 import { MenuItemModel } from '@syncfusion/ej2-angular-navigations';
 import { TranslationService } from '../../services/translation.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +10,8 @@ import { TranslationService } from '../../services/translation.service';
 })
 export class HeaderComponent implements OnInit {
   @Input() currentSection: string;
+  menuOpen: boolean = false;
+  selection: number;
   isHidden: boolean = false;
   isShow: boolean = false;
 
@@ -131,14 +134,45 @@ export class HeaderComponent implements OnInit {
   ];
 
   constructor(
-    private translationService: TranslationService
+    private translationService: TranslationService,
+    private router: Router
   ) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   openNav(): void {
-    /* this.menu.openNav(); */
+    this.menuOpen = !this.menuOpen;
+    console.log(this.menuOpen);
+  }
+
+  closeMenu(): void {
+    if (this.menuOpen) {
+      this.menuOpen = false;
+    }
+  }
+
+  toCould() {
+    document.getElementById("could").scrollIntoView({ behavior: "smooth" });
+    this.selection = 2;
+  }
+  toSearcher() {
+    document.getElementById("searcher").scrollIntoView({ behavior: "smooth" });
+    this.selection = 1;
+  }
+  toNetwork() {
+    document.getElementById("network").scrollIntoView({ behavior: "smooth" });
+    this.selection = 3;
+  }
+  toMap() {
+    document.getElementById("map").scrollIntoView({ behavior: "smooth" });
+    this.selection = 4; // Set the selection explicitly
+  }
+  toSparql() {
+    document.getElementById("sparql").scrollIntoView({ behavior: "smooth" });
+    this.selection = 5;
+  }
+  toAbout() {
+    this.router.navigate(["/acerca-de"]);
   }
 
   changeLanguage(lang: string): void {
