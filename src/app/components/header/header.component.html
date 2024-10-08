@@ -61,9 +61,9 @@
     </div>
   </div>
   <div *ngIf="menuOpen" id="menu-desplegable" [ngClass]="{'menu-open': menuOpen, 'menu-close': !menuOpen}">
-    <!-- <div class="btn-close" (click)="closeMenu()">
-        <a>Cerrar</a>
-      </div> -->
+    <div class="btn-close" (click)="closeMenu()">
+      <i class="fa fa-times fa-3x" aria-hidden="true"></i>
+    </div>  
     <div (click)="toSearcher()" class="btn-menu" (click)="closeMenu()">
       <img src="assets/img/home/busqueda.png">
       <a id="btn-buscador" class="fab" title="{{ 'navegacion.buscador' | translate }}">{{ "navegacion.buscador" |
