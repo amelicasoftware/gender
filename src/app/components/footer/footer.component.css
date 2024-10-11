@@ -19,6 +19,22 @@
     margin-bottom: 10px; 
 }
 
+.other-lines {
+    color: #A9A9A9;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+#logo-uaem img {
+    margin-top: 50px;
+    width: 30%;
+}
+
 .first-line {
     color: #D3D3D3;
 }

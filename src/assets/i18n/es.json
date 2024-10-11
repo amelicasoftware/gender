@@ -37,7 +37,12 @@
         "conocimiento": "Representación del conocimiento",
         "pais": "Artículos por país",
         "sparql": "Base de conocimiento en SPARQL",
-        "recientes": "Más recientes"
+        "recientes": "Más recientes",
+        "texto-num-articulo": "Artículos",
+        "texto-num-articulo2": "extraídos de",
+        "texto-num-rev": "revistas",
+        "texto-num-rev2": "indexadas de",
+        "texto-num-paises": "países"
     },
     "home": {
         "buscar": "Buscar",
@@ -45,7 +50,8 @@
         "recientes": "Publicaciones recientes",
         "mas": "Ver más artículos",
         "cargando": "Cargando Artículos...",
-        "sparql": "Punto de acceso SPARQL con los datos disponibles para acceder a los resultados para mayores análisis: <a style='color: #4762b2;' href='http://sparql.amelica.org/knowledgebase/epidemics/datastore'>{{ value }}</a>"
+        "sparql": "Punto de acceso SPARQL con los datos disponibles para acceder a los resultados para mayores análisis: <a style='color: #4762b2;' href='http://sparql.amelica.org/knowledgebase/epidemics/datastore'>{{ value }}</a>",
+        "mensaje1": "17 objetivos para transformar nuestro mundo"
     },
     "busqueda": {
         "banner": {
@@ -94,7 +100,7 @@
         "copyright": "Sistema de Información Científica Redalyc ®",
         "copyright2": "Red de revistas científicas de Acceso Abierto no comercial propiedad de la academia.",
         "version": "Redalyc Versión 5.0 | 2003 - 2024",
-        "correo": "comuniacion@redalyc.org"
+        "correo": "redalyc@redalyc.org"
     },
     "mHeader": {
         "title": "Sistema de Información Científica Redalyc",

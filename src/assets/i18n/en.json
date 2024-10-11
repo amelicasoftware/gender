@@ -37,12 +37,18 @@
         "conocimiento": "Knowledge representation",
         "pais": "Articles by country",
         "recientes": "More recent",
-        "sparql": "Knowledge base in  SPARQL"
+        "sparql": "Knowledge base in  SPARQL",
+        "texto-num-articulo": "Articles",
+        "texto-num-articulo2": "extracted from",
+        "texto-num-rev": "Indexed",
+        "texto-num-rev2": "Journals from",
+        "texto-num-paises": "Countries"
     },
     "home": {
         "buscar": "Search",
         "mensaje": "For a non-for-profit publishing model to keep the academic and open nature of the scientific communication.",
         "recientes": "Recent publications",
+        "mensaje1": "17 goals to transform our world",
         "mas": "Display more articles",
         "cargando": "Loading Articles...",
         "sparql": "SPARQL access point with the available data to access the results for better analysis: <a style='color: #4762b2;' href='http://sparql.amelica.org/knowledgebase/epidemics/datastore'>{{ value }}</a>"
@@ -93,8 +99,8 @@
     "footer": {
         "copyright": "Redalyc's System of Scientific Information ®",
         "copyright2": "Network of non-commercial academy-owned Open Access Scholarly and Scientific Journals.",
-        "version": "Redalyc Version 5.0 | 2003 - 2024",
-        "correo": "comuniacion@redalyc.org"
+        "version": "Redalyc 2021 Version 5.0 | 2020",
+        "correo": "redalyc@redalyc.org"
     },
     "mHeader": {
         "title": "Redalyc's System of Scientific Information",
